@@ -8,12 +8,12 @@ public class Train {
     private String trainId;
     private String trainNo;
     private List<List<Integer>> seat;
-    private Map<String, Time> stationTime;
+    private Map<String, String> stationTime;
     private List<String> stations;
 
     public Train(){}
 
-    public Train(String trainId, String trainNo, List<List<Integer>> seat, Map<String, Time> stationTime, List<String> stations) {
+    public Train(String trainId, String trainNo, List<List<Integer>> seat, Map<String, String> stationTime, List<String> stations) {
         this.trainId = trainId;
         this.trainNo = trainNo;
         this.seat = seat;
@@ -33,7 +33,7 @@ public class Train {
         return seat;
     }
 
-    public Map<String, Time> getStationTime() {
+    public Map<String, String> getStationTime() {
         return stationTime;
     }
 
@@ -53,7 +53,7 @@ public class Train {
         this.seat = seat;
     }
 
-    public void setStationTime(Map<String, Time> stationTime) {
+    public void setStationTime(Map<String, String> stationTime) {
         this.stationTime = stationTime;
     }
 

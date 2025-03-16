@@ -61,7 +61,7 @@ public class User {
 
     public void printTickets() {
         for(int i = 0; i<ticketsBooked.size(); i++){
-            System.out.println(ticketsBooked.get(i).toString());
+            System.out.println(ticketsBooked.get(i).getTicketInfo());
         }
     }
 }
